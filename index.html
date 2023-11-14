@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="escudo.png" sizes="16x16">
+    <title>Atletas Botafogo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="MD5.js"></script>
+    <script src="codigo.js" defer></script>
+</head>
+<body>
+    <div id="container-inicio">
+        <div id="container-info">
+            <h1>ALETAS BOTAFOGO 2023-2</h1>
+            <p>Criado com objetivos exclusivamente didáticos para a disciplina Desenvolvimento Web do Ibmec Rio.</p>
+        </div>
+        <div id="container-senha">
+            <input id="senha" type="text" placeholder="Informe a senha...">
+            <button onclick="checarSenha()">Entrar</button>
+            <p>Entre com a senha do login: SENHA</p>
+        </div>
+    </div> 
+
+    <div id="Acesso">
+        <header>
+            <h1>ATLETAS BOTAFOGO 2023-2</h1>
+            <button onclick="sair()">Sair</button>
+        </header>
+        <div id="botoes">
+            <button onclick="mostrarAtletas('masculino')">Masculino</button>
+            <button onclick="mostrarAtletas('feminino')">Feminino</button>
+            <button onclick="mostrarAtletas('all')">Todos</button>
+        </div>
+        <div id="conteudo-atletas" ></div>
+    </div>
+</body>
+</html>
