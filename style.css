@@ -4,6 +4,46 @@ body {
     height: 100vh; 
 }
 
+#conteudo-atletas {
+    margin-top: 20px;
+    display: grid; 
+    gap: 1em;
+    margin: auto; 
+}
+
+.atleta-container {
+    display: grid;
+    flex-direction: row;
+    width: 16rem;
+    background-color: white;
+    border-radius: 7%;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.atleta-container h3 {
+    font-family: Georgia, serif;
+    color: #373f3f;
+}
+
+.atleta-container img {
+    border-radius: 7%;
+}
+
+.atleta-container h4 {
+    font-family: Georgia, serif;
+    align-items: center;
+    width: 16rem;
+    color: white;
+    text-align: center;
+    background-color: #787e7e;
+    border-radius: 7%;
+    cursor: pointer;
+}
+
 #container-inicio {
     display: flex; 
     flex-direction: row; 
@@ -109,12 +149,7 @@ header button {
     justify-content: center;
 }
 
-#conteudo-atletas {
-    margin-top: 20px;
-    display: grid; 
-    gap: 1em;
-    margin: auto; 
-}
+
 
 @media screen and (max-width: 768px){
     #container-inicio{
