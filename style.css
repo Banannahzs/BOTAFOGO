@@ -111,6 +111,9 @@ header button {
 
 #conteudo-atletas {
     margin-top: 20px;
+    display: grid; 
+    gap: 1em;
+    margin: auto; 
 }
 
 @media screen and (max-width: 768px){
@@ -122,5 +125,26 @@ header button {
     }
     #botoes{
         flex-direction: column;
+    }
+    #conteudo-atletas{
+        grid-template-columns: 1fr;
+    }
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 1023px){
+    #conteudo-atletas{
+        grid-template-columns: 1fr 1fr;
+    }
+ }
+
+ @media screen and (min-width: 1024px) and (max-width: 1199px){
+    #conteudo-atletas{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+ }
+
+ @media screen and (min-width: 1200px){
+    #conteudo-atletas{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
  }

@@ -29,32 +29,51 @@ function mostrarAtletas(categoria) {
     }
 }
 
-const div_container = document.getElementById("conteudo-atletas");
+const atletas_container = document.getElementById("conteudo-atletas");
 
 const cria_cartao = (entrada) => {
 
     const container_atleta = document.createElement('div');
-    container_atleta.style.width = '20rem';
-    container_atleta.style.backgroundColor = '#777777';
+    container_atleta.style.cursor = 'pointer';
+    container_atleta.style.flexDirection = 'row';
+    container_atleta.style.width = '16rem';
+    container_atleta.style.backgroundColor = 'white';
+    container_atleta.style.borderRadius = '7%';
     container_atleta.style.textAlign = 'center';
+    container_atleta.style.justifyItems = 'center';
+    container_atleta.style.alignItems = 'center';
     container_atleta.style.margin = 'auto';
+
     const titulo = document.createElement('h3');
     titulo.innerHTML = entrada.nome;
+
     const imagem = document.createElement('img');
     imagem.src = entrada.imagem;
+    imagem.style.borderRadius = '7%';
     imagem.alt = `foto de ${entrada.nome}`;
-    const descricao = document.createElement('p');
-    descricao.innerHTML = entrada.descricao;
+
+    const adicional = document.createElement('h4');
+    adicional.innerHTML = `Saiba Mais`;
+    adicional.style.alignItems = 'center';
+    adicional.style.color = 'white';
+    adicional.style.textAlign = 'center';
+    adicional.style.backgroundColor = '#787E7E';
+    adicional.style.borderRadius = '7%';
 
     container_atleta.append(titulo);
     container_atleta.append(imagem);
-    container_atleta.append(descricao);
+    container_atleta.append(adicional);
 
-    div_container.appendChild(container_atleta)
+    container_atleta.addEventListener('click', () => {
+        window.location.href = `detalhes.html?id=${entrada.id}`;
+    });
+
+    atletas_container.appendChild(container_atleta)
 }
 
+
 const constroi_atletas = (lista_atletas) => {
-    div_container.innerHTML = "";
+    atletas_container.innerHTML = "";
     for (const atleta of lista_atletas) {
         cria_cartao(atleta);
     }
