@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="MD5.js"></script>
     <script src="codigo.js" defer></script>
+    <script src="jogadores.js"></script>
 </head>
 <body>
     <div id="container-inicio">
@@ -28,11 +29,13 @@
             <button onclick="sair()">Sair</button>
         </header>
         <div id="botoes">
-            <button onclick="mostrarAtletas('masculino')">Masculino</button>
-            <button onclick="mostrarAtletas('feminino')">Feminino</button>
-            <button onclick="mostrarAtletas('all')">Todos</button>
+            <button id="masculino-botao" onclick="mostrarAtletas('masculino')">Masculino</button>
+            <button id="feminino-botao" onclick="mostrarAtletas('feminino')">Feminino</button>
+            <button id="todos-botao" onclick="mostrarAtletas('todos')">Todos</button>
         </div>
-        <div id="conteudo-atletas" ></div>
+        <div id="conteudo-atletas" >
+            
+        </div>
     </div>
 </body>
 </html>
