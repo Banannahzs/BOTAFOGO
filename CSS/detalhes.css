@@ -1,0 +1,65 @@
+body {
+    background-color: #ADB3B3;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    color: #787E7E;
+    margin: 0px;
+}
+
+p {
+    font-family: Georgia, serif;
+    color: black;
+    margin: 0px auto;
+    max-width: 25em;
+}
+
+button {
+    background-color: #787E7E;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+button:hover {
+    background-color: #373f3f;
+}
+
+header {
+    background-color: white;
+    padding: 0.5em 1em;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 8px;
+}
+
+#container_sair {
+    margin-left: auto;
+}
+
+#botao_voltar {
+    font-size: 1em; 
+}
+
+#detalhes_conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+#detalhes-conteudo {
+    text-align: center;
+}

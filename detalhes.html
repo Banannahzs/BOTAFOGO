@@ -1,22 +1,31 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="escudo.png" sizes="16x16">
     <title>Detalhes Atletas</title>
-    <link rel="stylesheet" href="detalhes.css">
     <script src="detalhes.js" defer></script>
+    <link rel="stylesheet" href="CSS/detalhes.css">
     <script src="jogadores.js"></script>
+    <script src="codigo.js"></script>
+    <script src="localstorage.js"></script>
+    
 </head>
 <body>
     <header>
         <h1>DETALHES</h1>
         <div id="container_sair">
-            <button onclick="voltar()">Voltar</button>
+            <button id="botao_voltar">Voltar</button>
         </div>
     </header>
-    <div id="container-detalhes">
-
+    <div id="detalhes_conteudo">
+        <div id="detalhes-conteudo">
+            <img id="detalhes-imagem" alt="Imagem do Jogador">
+            <p id="detalhes-id"></p>
+            <p id="detalhes-nome"></p>
+            <p id="detalhes-descricao"></p>
+        </div>
     </div>
 </body>
-</html> -->
+</html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="escudo.png" sizes="16x16">
     <title>Atletas Botafogo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <script src="MD5.js"></script>
     <script src="codigo.js" defer></script>
     <script src="jogadores.js"></script>
@@ -28,11 +28,20 @@
             <h1>ATLETAS BOTAFOGO 2023-2</h1>
             <button onclick="sair()">Sair</button>
         </header>
-        <div id="botoes">
+        <div id="botoes_gnd">
             <button id="masculino-botao" onclick="mostrarAtletas('masculino')">Masculino</button>
             <button id="feminino-botao" onclick="mostrarAtletas('feminino')">Feminino</button>
             <button id="todos-botao" onclick="mostrarAtletas('todos')">Todos</button>
         </div>
+        <div>
+            <select id="botoes_pqn" onclick="mostrarAtletas(this.value)">
+                <option value="">Escolha a opção</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="todos">Todos</option>
+            </select>
+        </div>
+        
         <div id="conteudo-atletas">
         </div>
     </div>

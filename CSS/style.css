@@ -24,6 +24,14 @@ body {
     cursor: pointer;
 }
 
+.atleta-container {
+    transition: transform 0.3s;
+}
+
+.atleta-container:hover {
+    transform: scale(1.1); 
+}
+
 .atleta-container h3 {
     font-family: Georgia, serif;
     color: #373f3f;
@@ -76,6 +84,7 @@ p {
 }
 
 #container-senha {
+    font: Georgia, serif;
     text-align: center;
     flex: 0.6 1 0%;
 }
@@ -119,23 +128,21 @@ button:hover {
     display: flex; 
     flex-direction: row;
     justify-content: center;
-
 }
 
 header button {
     margin-left: auto;
 }
 
-#botoes {
+#botoes_gnd {
     display: flex; 
     flex-direction: row; 
     justify-content: center; 
     gap: 2em; 
     margin: 2em 0px 3em;
-    
 }
 
-#botoes button {
+#botoes_gnd button {
     font-size: large;
     text-align: center;
     border: none; 
@@ -149,7 +156,43 @@ header button {
     justify-content: center;
 }
 
+#botoes_pqn {
+    font: Georgia, serif;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #787E7E;
+    border: none; 
+    border-radius: 5px; 
+    width: 200px;
+    margin: auto;
+  }
 
+#botoes_pqn option {
+    font: Georgia, serif;
+    background-color: #787E7E; /* Cor de fundo cinza para opções */
+    color: white;
+}
+
+#Acesso {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+#Acesso header {
+    background-color: white;
+    padding: 0.5em 1em;
+    position: relative; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+
+header button {
+    margin-left: auto;
+}
 
 @media screen and (max-width: 768px){
     #container-inicio{
@@ -164,11 +207,23 @@ header button {
     #conteudo-atletas{
         grid-template-columns: 1fr;
     }
+    #botoes_gnd {
+        display: none;
+    }
+    #botoes_pqn {
+        display: flex;
+    }
  }
 
  @media screen and (min-width: 768px) and (max-width: 1023px){
     #conteudo-atletas{
         grid-template-columns: 1fr 1fr;
+    }
+    #botoes_gnd {
+        display: flex;
+    }
+    #botoes_pqn {
+        display: none;
     }
  }
 
@@ -176,10 +231,22 @@ header button {
     #conteudo-atletas{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    #botoes_gnd {
+        display: flex;
+    }
+    #botoes_pqn {
+        display: none;
+    }
  }
 
  @media screen and (min-width: 1200px){
     #conteudo-atletas{
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #botoes_gnd {
+        display: flex;
+    }
+    #botoes_pqn {
+        display: none;
     }
  }
