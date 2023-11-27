@@ -5,9 +5,7 @@ var senha = '85ee0fe4f155a9af2657d85054ad63ca';
 
     if (hex_md5(input) === senha) {
         localStorage.setItem("autorizado", "true");
-        inicio.addEventListener('click', () => {
-            window.location.href = 'inicio.html';
-        });
+        window.location.href = 'inicio.html';
     } else {
         alert("Senha incorreta!");
     }

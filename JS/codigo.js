@@ -52,7 +52,8 @@ const cria_cartao = (entrada) => {
     container_atleta.append(adicional);
 
     container_atleta.addEventListener('click', () => {
-        window.location.href = `detalhes.html?id=${entrada.id}&nome=${entrada.nome}&imagem=${entrada.imagem}&adicional=${entrada.descricao}`;
+        console.log('Detalhes:', entrada);
+        window.location.href = `detalhes.html?id=${entrada.id}&nome=${entrada.nome}&posicao=${entrada.posicao}&imagem=${entrada.imagem}&nome_completo=${entrada.nome_completo}&nascimento=${entrada.nascimento}&altura=${entrada.altura}&descricao=${entrada.descricao}`;
     });
 
     atletas_container.appendChild(container_atleta)
