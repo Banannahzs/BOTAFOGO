@@ -1,7 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    verificarAutenticacao();
-});
-
 
 const verificarAutenticacao = () => {
     const autorizado = localStorage.getItem("autorizado");
@@ -10,6 +6,10 @@ const verificarAutenticacao = () => {
         window.location = './index.html';
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    verificarAutenticacao();
+});
 
 function mostrarAtletas(categoria) {
     var conteudoAtletas = document.getElementById("conteudo-atletas");
