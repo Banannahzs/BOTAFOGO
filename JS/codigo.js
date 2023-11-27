@@ -1,26 +1,14 @@
-var senha_correta = "SENHA";
-var usuarioAutenticado = false;
+document.addEventListener("DOMContentLoaded", function() {
+    verificarAutenticacao();
+});
 
- function checarSenha() {
-    var input = document.getElementById("senha").value;
 
-    if (input === senha_correta) {
-        usuarioAutenticado = true;
-        document.getElementById("Acesso").style.display = "flex";
-        document.getElementById("container-inicio").style.display = "none";
-    } else {
-        alert("Senha errada!");
+const verificarAutenticacao = () => {
+    const autorizado = localStorage.getItem("autorizado");
+    if(autorizado !== "true"){
+        alert("Usuario não cadastrado, Efetue o login e tente novamente!");
+        window.location = './index.html';
     }
-} 
-
-function logar(){
-    const token = "um_token";
-    sessionStorage.setItem('token', token)
-
-}
-
-function apagatoken (){
-    sessionStorage.removeItem('token')
 }
 
 function mostrarAtletas(categoria) {
@@ -79,6 +67,5 @@ const constroi_atletas = (lista_atletas) => {
 }
 
 function sair() {
-    document.getElementById("container-inicio").style.display = "flex";
-    document.getElementById("Acesso").style.display = "none";
+    window.location.href = 'index.html';
 }

@@ -1,0 +1,67 @@
+body {
+    background-color: #ADB3B3;
+    display: flex; 
+    height: 100vh; 
+}
+
+#inicio {
+    display: flex; 
+    flex-direction: row; 
+    margin: auto; 
+    width: 70vw; 
+    min-width: 800px;
+}
+
+
+#container-info {
+    text-align: center; 
+    flex: 1 1 0%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    color: #787E7E;
+    margin: 0px;
+}
+
+p {
+    font-family: Georgia, serif;
+    color: white;
+    margin: 0px auto;
+    max-width: 25em;
+}
+
+#container-senha {
+    font: Georgia, serif;
+    text-align: center;
+    flex: 0.6 1 0%;
+}
+
+input {
+    padding: 0.5em;
+    margin: 0.5em;
+    cursor: text;
+}
+
+input:focus {
+    outline-style: outset;
+    outline-color: #787E7E;
+}
+
+button {
+    background-color: #787E7E;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+button:hover {
+    background-color: #373f3f;
+}

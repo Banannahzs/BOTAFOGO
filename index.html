@@ -5,45 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="escudo.png" sizes="16x16">
     <title>Atletas Botafogo</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <script src="MD5.js"></script>
-    <script src="codigo.js" defer></script>
-    <script src="jogadores.js"></script>
+    <link rel="stylesheet" href="CSS/login.css">
+    <script src="JS/MD5.js"></script>
+    <script src="JS/login.js" defer></script>
 </head>
 <body>
-    <div id="container-inicio">
+    <div id="inicio">
         <div id="container-info">
             <h1>ALETAS BOTAFOGO 2023-2</h1>
             <p>Criado com objetivos exclusivamente didáticos para a disciplina Desenvolvimento Web do Ibmec Rio.</p>
         </div>
         <div id="container-senha">
             <input id="senha" type="text" placeholder="Informe a senha...">
-            <button onclick="checarSenha()">Entrar</button>
+            <button type="button" onclick="checarSenha()">Entrar</button>
             <p>Entre com a senha do login: SENHA</p>
         </div>
     </div> 
-
-    <div id="Acesso">
-        <header>
-            <h1>ATLETAS BOTAFOGO 2023-2</h1>
-            <button onclick="sair()">Sair</button>
-        </header>
-        <div id="botoes_gnd">
-            <button id="masculino-botao" onclick="mostrarAtletas('masculino')">Masculino</button>
-            <button id="feminino-botao" onclick="mostrarAtletas('feminino')">Feminino</button>
-            <button id="todos-botao" onclick="mostrarAtletas('todos')">Todos</button>
-        </div>
-        <div>
-            <select id="botoes_pqn" onclick="mostrarAtletas(this.value)">
-                <option value="">Escolha a opção</option>
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
-                <option value="todos">Todos</option>
-            </select>
-        </div>
-        
-        <div id="conteudo-atletas">
-        </div>
-    </div>
 </body>
 </html>

@@ -1,5 +1,18 @@
+document.addEventListener("DOMContentLoaded", function() {
+    verificarAutenticacao();
+});
+
+
+const verificarAutenticacao = () => {
+    const autorizado = localStorage.getItem("autorizado");
+    if(autorizado !== "true"){
+        alert("Usuario não cadastrado, Efetue o login e tente novamente!");
+        window.location = './index.html';
+    }
+}
+
 botao_voltar.addEventListener('click', function() {
-    window.location.href = 'index.html';});
+    window.location.href = 'inicio.html';});
 
 const urlParams = new URLSearchParams(window.location.search);
     const jogadorImagem = urlParams.get('imagem');

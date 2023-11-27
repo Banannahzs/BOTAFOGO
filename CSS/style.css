@@ -4,6 +4,20 @@ body {
     height: 100vh; 
 }
 
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    color: #787E7E;
+    margin: 0px;
+}
+
+p {
+    font-family: Georgia, serif;
+    color: white;
+    margin: 0px auto;
+    max-width: 25em;
+}
+
 #conteudo-atletas {
     margin-top: 20px;
     display: grid; 
@@ -52,72 +66,9 @@ body {
     cursor: pointer;
 }
 
-#container-inicio {
-    display: flex; 
-    flex-direction: row; 
-    margin: auto; 
-    width: 70vw; 
-    min-width: 800px;
-}
-
-
-#container-info {
-    text-align: center; 
-    flex: 1 1 0%; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center;
-}
-
-h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 100;
-    color: #787E7E;
-    margin: 0px;
-}
-
-p {
-    font-family: Georgia, serif;
-    color: white;
-    margin: 0px auto;
-    max-width: 25em;
-}
-
-#container-senha {
-    font: Georgia, serif;
-    text-align: center;
-    flex: 0.6 1 0%;
-}
-
-input {
-    padding: 0.5em;
-    margin: 0.5em;
-    cursor: text;
-}
-
-input:focus {
-    outline-style: outset;
-    outline-color: #787E7E;
-}
-
-button {
-    background-color: #787E7E;
-    border: none;
-    color: white;
-    text-align: center;
-    padding: 0.5em;
-    cursor: pointer;
-    border-radius: 10%;
-}
-
-button:hover {
-    background-color: #373f3f;
-}
-
-
 #Acesso {
     width: 100%;
-    display: none;
+    display: flex;
     flex-direction: column;
 }
 
@@ -132,6 +83,20 @@ button:hover {
 
 header button {
     margin-left: auto;
+}
+
+button {
+    background-color: #787E7E;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+button:hover {
+    background-color: #373f3f;
 }
 
 #botoes_gnd {
@@ -173,25 +138,6 @@ header button {
     font: Georgia, serif;
     background-color: #787E7E; /* Cor de fundo cinza para opções */
     color: white;
-}
-
-#Acesso {
-    width: 100%;
-    display: none;
-    flex-direction: column;
-}
-
-#Acesso header {
-    background-color: white;
-    padding: 0.5em 1em;
-    position: relative; 
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
-}
-
-header button {
-    margin-left: auto;
 }
 
 @media screen and (max-width: 768px){
